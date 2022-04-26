@@ -105,6 +105,7 @@ body {
     }
 }
 
+/* Styling the container for the main text and the search bar*/
 .container{
 
     width: 100%;
@@ -128,6 +129,7 @@ body {
     padding: 10px 20px;
 }
 
+/*Styling the content of the search bar */
 .search-bar input{
     background: transparent;
     flex: 1;
@@ -167,5 +169,115 @@ body {
 
 .search-bar button i:hover{
     color:rgba(114, 107, 107, 0.5);
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
+}
+
+
+/*Styling the 'At All Levels' section*/
+section {
+
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+}
+
+/*Styling the "card" - so just adding a border around the content*/
+.card {
+    border: 20px double rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(rgb(255, 255, 255) 50%, #1b70f8 50%);
+    background-size: 100% 200%;
+    border-radius: 50px;
+    box-shadow: 0 0 35px rgba(245, 38, 38, 0.5);
+    cursor: pointer;
+}
+
+.row {
+    flex-direction: column;
+    text-align: center;
+}
+.heading {
+    font-size: 50px;
+}
+
+.card h3 {
+
+    font-size: 20px;
+    font-weight: 550px;
+    color: #251e58;
+    margin: 1em 0;
+}
+
+.card p{
+
+    color: #5f6391;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.2em;
+}
+
+.card:hover{
+
+    background-position: 0 100%;
+    background-color: #1e5bbd;
+    transition: all 0.2s linear;
+}
+
+.card:hover .icon-wrapper {
+
+    background-color:#1e5bbd;
+    transition: all 0.2s linear;
+    border-radius: 100px;
+    
+}
+.card:hover h3{
+    color: #fff;
+}
+.card:hover p{
+    color: #d6d1d1;
+
+}
+
+@media only screen and (min-width: 768px){
+
+    section {
+        padding: 0 2em;
+    }
+    .column {
+        flex: 0 50%;
+        max-width: 100%;
+    }
+        
+}
+
+
+@media only screen and (min-width: 992px){
+
+    section{
+        padding: 1em 3em;
+    
+        
+    }
+    .column{
+        display: flex;
+        justify-content: center; 
+        align-items: left;
+        
+    }
+    
+      
 }
