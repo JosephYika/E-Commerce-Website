@@ -184,18 +184,39 @@ section {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 40px 25px;
+    
+}
+.row1 {
+    text-align: center;
+}
+
+.row1 p{
+    color: #5f6391;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.2em;
+    font-size: 20px;
+    font-weight: 550px;
+    color: #251e58;
     
 }
 .column {
-    width: 100%;
-    padding: 0 1em 1em 1em;
+    width: 50%;
+    padding: 0em 1em 1em 1em;
     text-align: center;
+    
+    
+    
+   
 }
 
 /*Styling the "card" - so just adding a border around the content*/
 .card {
-    border: 20px double rgb(0, 0, 0);
+   /* border: 20px double rgb(0, 0, 0);*/
+    border: solid 1px orange;
     width: 100%;
     height: 100%;
     padding: 2em 1.5em;
@@ -204,16 +225,16 @@ section {
     border-radius: 50px;
     box-shadow: 0 0 35px rgba(245, 38, 38, 0.5);
     cursor: pointer;
+    resize: none;
+   
 }
 
-.row {
-    flex-direction: column;
-    text-align: center;
-}
+/* Change the font of the heading text for the second section*/
 .heading {
     font-size: 50px;
 }
 
+/*styling h3 inside the card div*/
 .card h3 {
 
     font-size: 20px;
@@ -222,6 +243,7 @@ section {
     margin: 1em 0;
 }
 
+/*Styling p inside the card div*/
 .card p{
 
     color: #5f6391;
@@ -230,6 +252,7 @@ section {
     letter-spacing: 0.2em;
 }
 
+/* Adding animation on the mouse hover*/
 .card:hover{
 
     background-position: 0 100%;
@@ -249,35 +272,47 @@ section {
 }
 .card:hover p{
     color: #d6d1d1;
-
 }
 
-@media only screen and (min-width: 768px){
+/* Adjusting the size of all the elements for tablets*/ /*run the code inside if the width of the screen is less than 768px*/
+@media only screen and (max-width: 768px){
+
 
     section {
-        padding: 0 2em;
-    }
-    .column {
-        flex: 0 50%;
-        max-width: 100%;
-    }
+        padding: 0 2; /* add a little bit of padding for top and right and left */
         
-}
-
-
-@media only screen and (min-width: 992px){
-
-    section{
-        padding: 1em 3em;
-    
         
+    }
+    .row {
+        flex-direction: column; /* line elements on the top of each other*/
+        width: 100%; /* make the width of this div to take up 100% of the screen*/
     }
     .column{
-        display: flex;
-        justify-content: center; 
-        align-items: left;
         
+        width: 100%; /* make the width of this 'column' div to take up 100% of the screen*/
     }
     
-      
+    
+
+}
+/* Adjusting the size of all the elements for phones*/
+@media only screen and (max-width: 500px){
+
+
+    section {
+        padding: 0 2; /* add a little bit of padding for top and right and left */
+        
+        
+    }
+    .row {
+        flex-direction: column; /* line elements on the top of each other*/
+        width: 100%; /* make the width of this div to take up 100% of the screen*/
+    }
+    .column{
+        
+        width: 100%; /* make the width of this 'column' div to take up 100% of the screen*/
+    }
+    
+    
+
 }
