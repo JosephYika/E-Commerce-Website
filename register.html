@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0b5ffaa0be.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    
 
     <!--Sets the viewport. Gives browser instructions on how to control the page's dimensions and scaling-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -16,6 +16,26 @@
     
 </head>
 <body>
+    <nav class="navbar-login">
+        <div class="brand-title">Musicursum</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            
+        </a>
+        <div class="navbar-elements">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+
+        </div>
+    </nav>
 
     <div class="background-wrapper">
         <div class="form-box">
@@ -25,15 +45,30 @@
                 <button type="button">Register</button>
             </div>
 
-            <div class="social-media">
+            <div class="social-media1">
                 <img src="Images/linkedin.png">
                 <img src="Images/instagram.png">
                 <img src="Images/twitter.png">
             </div>
-            <form class="input-text">
-                <input type="text" class="input-field" placeholder="Enter UserName" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
-                <input type="email" class="input-field" placeholder="Enter your email address" required>
+            <form class="input-text1">
+
+                <!--This div has two classes-->
+                <div class="form-message form-message-error"></div>
+                <div class="form-input-error-message"></div>
+                <div class="form-input-group">
+                    <input type="text" id="signupUsername" class="input-field" placeholder="Create UserName" required>
+                </div>
+                <div class="form-input-group">
+                    <input type="email" class="input-field" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-input-group">
+                    <input type="text" class="input-field" placeholder="Create Password" required>
+                </div>
+                <div class="form-input-group">
+                    <input type="text" class="input-field" placeholder="Confirm Your Password" required>
+                </div>
+                
+                
                 <input type="checkbox" class="check-box"><span>I agree to terms & conditions</span>
                 <button type="submit" class="submit-btn">Register</button>
         
@@ -45,6 +80,6 @@
 
     </div>
 
-    
+ <script src="script.js" defer></script>
 </body>
 </html>

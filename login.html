@@ -8,13 +8,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0b5ffaa0be.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    
 
     <!--Sets the viewport. Gives browser instructions on how to control the page's dimensions and scaling-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Login Page</title>
 </head>
 <body>
+    <nav class="navbar-login">
+        <div class="brand-title">Musicursum</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            
+        </a>
+        <div class="navbar-elements">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+
+        </div>
+    </nav>
 
     <div class="background-wrapper">
         <div class="form-box">
@@ -30,18 +50,38 @@
                 <img src="Images/twitter.png">
             </div>
             <form id="login" class="input-text">
-                <input type="text" class="input-field" placeholder="Enter UserName" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
+            
+                <!--This div has two classes-->
+            
+                <input type="text" class="input-field" placeholder="Enter UserName or Email" required>
+            
+            
+            
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+            
+            
                 <input type="checkbox" class="check-box"><span>Remember Credentials</span>
                 <button type="submit" class="submit-btn">Log In</button>
-
+            
+            
+            
+            
             </form>
+            
+            <p class="form-text">
+                <a href="#" class="form-link">Forgot your password?</a>
+            </p>
+            
+            
            
         </div>
+        
+        
 
         
 
     </div>
-    
+
+    <script src="script.js" defer></script>
 </body>
 </html>
